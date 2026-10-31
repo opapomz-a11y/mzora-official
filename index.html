@@ -1,41 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <!-- =======================================================
+       MZORA (MZR) — OFFICIAL WEBSITE
+       Ethereum ERC-20
+       ======================================================= -->
 
   <!-- Primary SEO -->
+
   <title>MZORA (MZR) | Official Ethereum ERC-20 Token</title>
 
   <meta name="description"
         content="Official website of MZORA (MZR), an ERC-20 digital asset built on Ethereum. Verify the official contract, tokenomics, founder vesting and on-chain information.">
 
   <meta name="keywords"
-        content="MZORA, MZR, MZORA Token, MZR Token, Ethereum, ERC-20, digital asset">
+        content="MZORA, MZR, MZORA Token, MZR Token, Ethereum, ERC-20, cryptocurrency, digital asset">
 
-  <meta name="robots" content="index, follow">
+  <meta name="robots"
+        content="index, follow">
+
+  <meta name="author"
+        content="MZORA">
+
+  <!-- Canonical URL -->
 
   <link rel="canonical"
         href="https://opapomz-a11y.github.io/mzora-official/">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <!-- =======================================================
+       FAVICON AND BRANDING
+       ======================================================= -->
+
+  <link rel="icon"
+        type="image/png"
+        sizes="64x64"
+        href="MZORA_MZR_logo_64.png">
+
+  <link rel="apple-touch-icon"
+        href="MZORA_MZR_logo_256.png">
+
+  <!-- =======================================================
+       OPEN GRAPH
+       WhatsApp / Facebook / LinkedIn / other platforms
+       ======================================================= -->
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:site_name"
+        content="MZORA">
+
   <meta property="og:title"
         content="MZORA (MZR) | Official Ethereum ERC-20 Token">
+
   <meta property="og:description"
-        content="Official MZORA (MZR) website. Verify the Ethereum contract, tokenomics and on-chain information.">
+        content="Official MZORA (MZR) website. Verify the Ethereum contract, tokenomics, founder vesting and on-chain information.">
+
   <meta property="og:url"
         content="https://opapomz-a11y.github.io/mzora-official/">
-  <meta property="og:site_name" content="MZORA">
 
-  <!-- X / Twitter -->
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image"
+        content="https://opapomz-a11y.github.io/mzora-official/MZORA_MZR_logo_256.png">
+
+  <meta property="og:image:alt"
+        content="Official MZORA MZR logo">
+
+  <!-- =======================================================
+       X / TWITTER
+       ======================================================= -->
+
+  <meta name="twitter:card"
+        content="summary">
+
   <meta name="twitter:title"
         content="MZORA (MZR) | Official Website">
+
   <meta name="twitter:description"
         content="MZORA (MZR) is an ERC-20 digital asset built on Ethereum. Verify the official contract and on-chain information.">
 
-  <!-- Structured Data -->
+  <meta name="twitter:image"
+        content="https://opapomz-a11y.github.io/mzora-official/MZORA_MZR_logo_256.png">
+
+  <meta name="twitter:image:alt"
+        content="Official MZORA MZR logo">
+
+  <!-- =======================================================
+       STRUCTURED DATA — SCHEMA.ORG
+       ======================================================= -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,6 +105,7 @@
     ],
     "url": "https://opapomz-a11y.github.io/mzora-official/",
     "description": "Official website of MZORA (MZR), an ERC-20 digital asset built on Ethereum.",
+    "image": "https://opapomz-a11y.github.io/mzora-official/MZORA_MZR_logo_256.png",
     "sameAs": [
       "https://x.com/Mzora_official",
       "https://etherscan.io/token/0x873D0A2f6741B9d2aFEDF674A17fF101B724437c"
@@ -54,7 +113,12 @@
   }
   </script>
 
+  <!-- =======================================================
+       WEBSITE DESIGN
+       ======================================================= -->
+
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -71,26 +135,47 @@
       line-height: 1.6;
     }
 
+    /* HEADER */
+
     header {
-      padding: 80px 20px;
+      padding: 70px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #07111f, #102c4c);
+      background:
+        linear-gradient(
+          135deg,
+          #07111f,
+          #102c4c
+        );
+    }
+
+    /* OFFICIAL LOGO */
+
+    .mzora-logo {
+      display: block;
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      margin: 0 auto 25px;
     }
 
     header h1 {
       font-size: 48px;
       margin: 0;
+      letter-spacing: 2px;
     }
 
     header h2 {
       color: #67b7ff;
       font-weight: normal;
+      margin-top: 5px;
     }
 
     header p {
       max-width: 700px;
       margin: 20px auto 0;
     }
+
+    /* ETHEREUM BADGE */
 
     .badge {
       display: inline-block;
@@ -100,6 +185,8 @@
       color: #67b7ff;
       margin-bottom: 15px;
     }
+
+    /* MAIN CONTENT */
 
     main {
       max-width: 950px;
@@ -115,6 +202,8 @@
       color: #67b7ff;
     }
 
+    /* CONTRACT BOX */
+
     .contract {
       background: #101d30;
       padding: 20px;
@@ -123,9 +212,17 @@
       border: 1px solid #263c58;
     }
 
+    /* TOKENOMICS GRID */
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(200px, 1fr)
+        );
+
       gap: 15px;
     }
 
@@ -136,9 +233,17 @@
       border: 1px solid #1d3048;
     }
 
+    /* LINKS */
+
     a {
       color: #67b7ff;
     }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* VERIFICATION WARNING */
 
     .warning {
       border-left: 4px solid #ffbf47;
@@ -146,32 +251,82 @@
       background: #1b1b19;
     }
 
+    /* FOOTER */
+
     footer {
       text-align: center;
       padding: 35px 20px;
       border-top: 1px solid #263c58;
       color: #9eafc5;
     }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      header {
+        padding: 50px 20px;
+      }
+
+      header h1 {
+        font-size: 40px;
+      }
+
+      .mzora-logo {
+        width: 130px;
+        height: 130px;
+      }
+
+    }
+
   </style>
+
 </head>
+
 
 <body>
 
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
 <header>
-  <div class="badge">Ethereum • ERC-20</div>
+
+  <img
+    src="MZORA_MZR_logo_256.png"
+    alt="Official MZORA MZR logo"
+    class="mzora-logo"
+    width="160"
+    height="160"
+  >
+
+  <div class="badge">
+    Ethereum • ERC-20
+  </div>
 
   <h1>MZORA</h1>
+
   <h2>MZR</h2>
 
   <p>
     A digital asset built on Ethereum with a focus on
     transparency, utility and verifiable on-chain infrastructure.
   </p>
+
 </header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+     ========================================================= -->
 
 <main>
 
+
+<!-- ABOUT -->
+
 <section>
+
   <h2>About MZORA</h2>
 
   <p>
@@ -184,71 +339,134 @@
     MZORA is being developed progressively, with an emphasis on
     transparency and blockchain-verifiable information.
   </p>
+
 </section>
 
+
+<!-- OFFICIAL CONTRACT -->
+
 <section>
+
   <h2>Official MZORA Contract</h2>
 
   <div class="contract">
-    <strong>Ethereum Mainnet</strong><br><br>
+
+    <strong>Ethereum Mainnet</strong>
+
+    <br><br>
+
     0x873D0A2f6741B9d2aFEDF674A17fF101B724437c
+
   </div>
 
   <p>
     Symbol: <strong>MZR</strong><br>
+
     Standard: <strong>ERC-20</strong><br>
+
     Decimals: <strong>18</strong><br>
-    Total Supply: <strong>1,000,000,000 MZR</strong>
+
+    Total Supply:
+    <strong>1,000,000,000 MZR</strong>
   </p>
 
   <p>
-    <a href="https://etherscan.io/token/0x873D0A2f6741B9d2aFEDF674A17fF101B724437c"
-       target="_blank"
-       rel="noopener noreferrer">
-       Verify MZORA on Etherscan
+
+    <a
+      href="https://etherscan.io/token/0x873D0A2f6741B9d2aFEDF674A17fF101B724437c"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Verify MZORA on Etherscan
     </a>
+
   </p>
+
 </section>
 
+
+<!-- TOKENOMICS -->
+
 <section>
+
   <h2>Tokenomics</h2>
 
   <div class="grid">
 
     <div class="card">
-      <strong>Ecosystem</strong><br>
+
+      <strong>Ecosystem</strong>
+
+      <br>
+
       30% — 300,000,000 MZR
+
     </div>
 
+
     <div class="card">
-      <strong>Liquidity</strong><br>
+
+      <strong>Liquidity</strong>
+
+      <br>
+
       20% — 200,000,000 MZR
+
     </div>
 
+
     <div class="card">
-      <strong>Development</strong><br>
+
+      <strong>Development</strong>
+
+      <br>
+
       15% — 150,000,000 MZR
+
     </div>
 
+
     <div class="card">
-      <strong>Reserve</strong><br>
+
+      <strong>Reserve</strong>
+
+      <br>
+
       15% — 150,000,000 MZR
+
     </div>
 
-    <div class="card">
-      <strong>Founder</strong><br>
-      10% — 100,000,000 MZR
-    </div>
 
     <div class="card">
-      <strong>Partnerships</strong><br>
+
+      <strong>Founder</strong>
+
+      <br>
+
       10% — 100,000,000 MZR
+
+    </div>
+
+
+    <div class="card">
+
+      <strong>Partnerships</strong>
+
+      <br>
+
+      10% — 100,000,000 MZR
+
     </div>
 
   </div>
+
 </section>
 
+
+<!-- FOUNDER VESTING -->
+
 <section>
+
   <h2>Founder Vesting</h2>
 
   <p>
@@ -257,12 +475,24 @@
   </p>
 
   <div class="contract">
-    <strong>Founder VestingWallet</strong><br><br>
+
+    <strong>
+      Founder VestingWallet
+    </strong>
+
+    <br><br>
+
     0x45995Fc318d4b6726D88EC7ddE4d46455487437A
+
   </div>
+
 </section>
 
+
+<!-- TRANSPARENCY -->
+
 <section>
+
   <h2>Transparency</h2>
 
   <p>
@@ -277,51 +507,92 @@
     independent security assessment and preparation for future
     liquidity infrastructure.
   </p>
+
 </section>
 
+
+<!-- OFFICIAL CHANNELS -->
+
 <section>
+
   <h2>Official Channels</h2>
 
   <p>
-    <a href="https://x.com/Mzora_official"
-       target="_blank"
-       rel="noopener noreferrer">
-       MZORA on X
+
+    <a
+      href="https://x.com/Mzora_official"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      MZORA on X
     </a>
+
   </p>
+
 
   <p>
-    <a href="https://etherscan.io/token/0x873D0A2f6741B9d2aFEDF674A17fF101B724437c"
-       target="_blank"
-       rel="noopener noreferrer">
-       Official Ethereum Contract
+
+    <a
+      href="https://etherscan.io/token/0x873D0A2f6741B9d2aFEDF674A17fF101B724437c"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Official Ethereum Contract
     </a>
+
   </p>
+
 </section>
 
+
+<!-- SECURITY / VERIFICATION -->
+
 <section>
+
   <h2>Important Verification Notice</h2>
 
   <div class="warning">
+
     Other digital assets may use the ticker MZR or similar names.
+
     The official MZORA token on Ethereum must always be verified
     using its contract address:
+
     <br><br>
 
     <strong>
       0x873D0A2f6741B9d2aFEDF674A17fF101B724437c
     </strong>
+
   </div>
+
 </section>
+
 
 </main>
 
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
 <footer>
-  <strong>MZORA (MZR)</strong><br>
+
+  <strong>
+    MZORA (MZR)
+  </strong>
+
+  <br>
+
   Built on Ethereum • Verifiable on-chain
+
   <br><br>
+
   © 2026 MZORA
+
 </footer>
 
+
 </body>
-  </html>
+
+</html>
